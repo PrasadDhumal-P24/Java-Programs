@@ -1,23 +1,23 @@
 import java.util.Scanner;
 
-class Fibonacci{
+class Fibonacci {
     public static void main(String[] args){
 
         Scanner sc = new Scanner(System.in);
+            System.out.println("Enter the nth number of bifonacci");
 
-        System.out.println("Enter a nth number of terms");
-        int n = sc.nextInt();
+            int n = sc.nextInt();
 
-        int a = 0;
-        int b = 1;
 
-        for(int i = 1; i<=n; i++){
+            int a = 0;
+            int b = 1;
 
-            System.out.println(a + " ");
+            for(int i = 1; i<=n; i++){
+                System.out.println(a + " ");
 
-            int c = a + b;
-            a = b; 
-            b = c;
-        }
+                int c = a + b;
+                a = b;
+                b = c;
+            }
     }
 }
